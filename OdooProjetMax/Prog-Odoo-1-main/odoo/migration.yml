@@ -8,4 +8,4 @@ migration:
       addons:
         upgrade:
           # local-src
-          # - addon
+          # - addo

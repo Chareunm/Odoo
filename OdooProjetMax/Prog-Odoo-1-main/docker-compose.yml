@@ -31,7 +31,7 @@ services:
     environment:
       DB_USER: odoo
       DB_PASSWORD: odoo
-      DB_NAME: noe_rolland
+      DB_NAME: maximilien_chareun
       ADMIN_PASSWD: admin
       RUNNING_ENV: dev
       MARABUNTA_MODE: sample  # 'full' for the db with all the data

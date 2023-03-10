@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+if [ "$( psql -tAc "SELECT 1 FROM pg_database WHERE datname='$DB_NAME'" )" != '1' ]
+then
+    echo "Database does not exist, ignoring script"
+    exit 0
+fi
+
+CONFIGFILE=/odoo/history.yml
+METIS_DB_HOST=$DB_HOST \
+  METIS_DATABASE=$DB_NAME \
+  METIS_DB_USER=$DB_USER \
+  METIS_DB_PASSWORD=$DB_PASSWORD \
+  METIS_DB_PORT=$DB_PORT \
+unbuffer metis --history-file $CONFIGFILE

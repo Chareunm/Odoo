@@ -1,0 +1,11 @@
+migration:
+  versions:
+    - version: setup
+      operations:
+        pre:
+          - odoo -i base --stop-after-init --workers=0 --no-xmlrpc
+          - anthem songs.install.pre::main
+      addons:
+        upgrade:
+          # local-src
+          # - addon

@@ -1,0 +1,10 @@
+# Platform Exoscale
+boto3==1.26.3
+
+# Platform
+redis==2.10.5
+python-json-logger==0.1.5
+statsd==3.2.1
+
+# Metis
+git+https://gitlab.com/kal-it/metis.git

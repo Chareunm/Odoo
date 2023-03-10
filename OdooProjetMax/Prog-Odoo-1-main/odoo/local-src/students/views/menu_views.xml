@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="students_menu" name="Students"/>
+    <menuitem id="students_training_menu" name="Trainings" parent="students_menu" action="action_students_training_view"/>
+    <menuitem id="students_student_menu" name="Students" parent="students_menu" action="action_students_student_view"/>
+</odoo>
